@@ -1,6 +1,9 @@
 :root {
     --main-color: #3B44F6;
+    --background-color: #020204;
     --white-color: #fff;
+    --title-color: #181818;
+    --subtitle-color: #323232;
     --line-color: #32323D;
 }
 
@@ -13,19 +16,19 @@ a {
     text-decoration: none;
 }
 
+/* work */
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* header */
 .header--inner {
     display: flex;
     padding: 25px;
     justify-content: space-between;
 }
 
-/* logo */
 .logo__item {
     font-weight: 700;
     font-size: 28px;
@@ -74,7 +77,6 @@ a {
 }
 
 .button__item span {
-    font-family: "Lexend", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 144%;
@@ -86,30 +88,50 @@ a {
     border: 1px solid var(--white-color);
 }
 
-.sign-in:hover {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-}
-
 .sign-up:hover {
     background-color: transparent;
     border: 1px solid var(--white-color);
 }
 
-.sign-in:active {
-    transform: scale(0.97);
+.sign-in:hover {
+    background-color: var(--main-color);
+    border: none;
 }
 
+.sign-in:active,
 .sign-up:active {
     transform: scale(0.97);
 }
 
-/* head__line */
 .head__line {
     margin: 0 auto;
     height: 1px;
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     background-color: var(--line-color);
+    margin-bottom: 80px;
 }
 
-/* main */
+.header__why-us {
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.title__why-us {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+.subtitle__why-us {
+    text-align: center;
+    color: var(--subtitle-color);
+}
+
+.box__why-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 161px;
+}

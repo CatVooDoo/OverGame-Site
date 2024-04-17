@@ -3,6 +3,8 @@
     --background-color: #020204;
     --white-color: #fff;
     --title-color: #181818;
+    --sale-background: #F5F4F9;
+    --sale-price-color: #7D7D7D;
     --subtitle-color: #323232;
     --line-color: #32323D;
 }
@@ -116,7 +118,7 @@ a {
 
 .slider {
     max-width: 1200px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .slider__item {
@@ -131,7 +133,83 @@ a {
 .item3 {
     display: none;
 }
+/* catalog */
+.catalog {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
+.catalog__title {
+    font-weight:700;
+    font-size: 36px;
+    color: var(--white-color);
+    margin-bottom: 28px;
+}
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 16px;
+    margin-bottom: 24px;
+}
+
+.catalog__item {
+    width: 262px;
+    height: 340px;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    transition: 0.3s ease;
+}
+
+.catalog__item-anim {
+    transform: scale(1.03);
+}
+
+.catalog__item_img {
+    padding: 16px 16px 0 16px;
+}
+
+.header__catalog-text {
+    padding: 15px 16px 24px 16px;
+}
+
+.game-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--title-color);
+    margin-bottom: 17px;
+}
+
+.card__subtitles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+.card-sale {
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: var(--sale-background);
+}
+
+.card-sale h3 { 
+    font-weight: 500;
+    font-size: 16px;
+    padding: 3px;
+    color: var(--sale-price-color);
+    text-decoration: line-through;
+}
+
+
+/* trbl */
+
+/* why-us */
 .header__why-us {
     max-width: 360px;
     margin: 0 auto;

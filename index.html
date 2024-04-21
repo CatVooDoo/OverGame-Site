@@ -32,9 +32,22 @@
                         <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                     </ul>
                 </nav>
-                <div class="sign__button">
+                <!-- <div class="sign__button">
                     <button class="button__item sign-up"><span>Sign up</span></button>
                     <button class="button__item sign-in"><span>Login</span></button>
+                </div> -->
+                <div class="user--icons">
+                    <div class="user--icon">
+                        <a class="user__link" href="#"><img class="user__link" src="img/header/cart.svg" alt="User"></a>
+                    </div>
+                    <div class="user--icon">
+                        <a class="user__link" href="#"><img class="user__link" src="img/header/favorite.svg"
+                                alt="Favorites"></a>
+                    </div>
+                    <div class="user--icon">
+                        <a class="user__link" href="#"><img class="user__link" src="img/header/user.svg"
+                                alt="Shopping cart"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,6 +170,21 @@
                         </div>
                     </div>
                 </section>
+                <section class="modal__window" id="modal">
+                    <div class="product__box">
+                        <div class="product__image"></div>
+                        <div class="add-to__cart">
+                            <div class="price__box">
+                                <h1 class="price">0₽</h1>
+                                <h1 class="price sale__price">100₽</h1>
+                            </div>
+                            <div class="button__add-to-cart">
+                                <button class="btn__add-to-cart"><span class="btn__add-to-cart--text">Добавить в
+                                        корзину</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="section__why-us">
                     <div class="header__why-us">
                         <h1 class="title__why-us">Почему OverGame?</h1>
@@ -187,9 +215,47 @@
             </div>
         </div>
     </main>
+    <div class="head__line footer--line"></div>
     <footer class="footer">
         <div class="wrapper">
-
+            <div class="footer--inner">
+                <div class="logo">
+                    <a href="#">
+                        <h1 class="logo__item">Over<span>Game</span></h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <h1 class="footer__title">Menu</h1>
+                    <ul class="menu__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Order tracking</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Store location</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Return policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h1 class="footer__title">Resources</h1>
+                    <ul class="resources__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Help center</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Documentation</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h1 class="footer__title">Подписка на нас</h1>
+                    <div class="follow-us__list">
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/instagram.svg"
+                                alt="instagram" class="follow__item"></a>
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/youtube.svg"
+                                alt="instagram" class="follow__item"></a>
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/twitch.svg"
+                                alt="instagram" class="follow__item"></a>
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/twitter.svg"
+                                alt="instagram" class="follow__item"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

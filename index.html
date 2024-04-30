@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/reset.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
     <title>OverGame</title>
     <script src="src/slider.js" defer></script>
@@ -26,17 +26,17 @@
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Русификаторы</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Модицикации</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Наши продукты</a></li>
+                        <li class="nav__item"><a href="catalog.html" class="nav__link">Русификаторы</a></li>
+                        <li class="nav__item"><a href="catalog.html" class="nav__link">Модицикации</a></li>
+                        <li class="nav__item"><a href="catalog.html" class="nav__link">Наши продукты</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                     </ul>
                 </nav>
-                <!-- <div class="sign__button">
-                    <button class="button__item sign-up"><span>Sign up</span></button>
-                    <button class="button__item sign-in"><span>Login</span></button>
-                </div> -->
-                <div class="user--icons">
+                <div class="sign__button">
+                    <button class="button__item sign-up"><span>Регистрация</span></button>
+                    <button class="button__item sign-in"><span>Вход</span></button>
+                </div>
+                <!-- <div class="user--icons">
                     <div class="user--icon">
                         <a class="user__link" href="#"><img class="user__link" src="img/header/cart.svg" alt="User"></a>
                     </div>
@@ -48,13 +48,38 @@
                         <a class="user__link" href="#"><img class="user__link" src="img/header/user.svg"
                                 alt="Shopping cart"></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
     <div class="head__line"></div>
     <main class="main">
         <div class="wrapper">
+            <section class="modal__window modal__reg" id="modalreg">
+                <div class="product__box">
+                    <div class="add-to__cart reg__form">
+                        <div class="price__box reg__item">
+                            <h1 class="price reg__text">Регистрация</h1>
+                        </div>
+                        <form class="registration">
+                            <div class="reg__inputs">
+                                <input placeholder="Имя пользователя" type="text" class="input__item input__username"
+                                    id="username" name="username">
+                                <input placeholder="Почта" type="email" class="input__item input__email" id="email"
+                                    name="email">
+                                <input placeholder="Пароль" type="password" class="input__item input__password"
+                                    id="password" name="password">
+                            </div>
+
+                            <div class="button__add-to-cart">
+                                <button class="btn__add-to-cart"><span
+                                        class="btn__add-to-cart--text">Зарегестрироваться</span></button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
             <div class="main--inner">
                 <section class="slider">
                     <div class="slider__list">
@@ -71,7 +96,7 @@
                                 <img src="img/catalog/gta5.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">GTA V</h1>
+                                <h1 class="game-name">GTA V <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">300₽</p>
                                     <div class="card-sale">
@@ -85,7 +110,7 @@
                                 <img src="img/catalog/roblox.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">Roblox</h1>
+                                <h1 class="game-name">Roblox <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">Free Download</p>
                                 </div>
@@ -96,7 +121,7 @@
                                 <img src="img/catalog/nba.png" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">NBA 2K22</h1>
+                                <h1 class="game-name">NBA 2K22 <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">900₽</p>
                                 </div>
@@ -107,7 +132,7 @@
                                 <img src="img/catalog/dbd.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">Dead by Daylight</h1>
+                                <h1 class="game-name">Dead by Daylight <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">500₽</p>
                                     <div class="card-sale">
@@ -123,7 +148,7 @@
                                 <img src="img/catalog/ark.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">ARK: Survival Evolved</h1>
+                                <h1 class="game-name">ARK: Survival Evolved <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">600₽</p>
                                     <div class="card-sale">
@@ -137,7 +162,7 @@
                                 <img src="img/catalog/rl.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">Rocket League</h1>
+                                <h1 class="game-name">Rocket League <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">Free Download</p>
                                 </div>
@@ -148,7 +173,7 @@
                                 <img src="img/catalog/fh5.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">Forza Horizon 5</h1>
+                                <h1 class="game-name">Forza Horizon 5 <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">1300₽</p>
                                 </div>
@@ -159,7 +184,7 @@
                                 <img src="img/catalog/stc.jpg" alt="">
                             </div>
                             <div class="header__catalog-text">
-                                <h1 class="game-name">Cities: Skylines</h1>
+                                <h1 class="game-name">Cities: Skylines <span>Русификатор</span></h1>
                                 <div class="card__subtitles">
                                     <p class="card-price">700₽</p>
                                     <div class="card-sale">
@@ -172,7 +197,17 @@
                 </section>
                 <section class="modal__window" id="modal">
                     <div class="product__box">
-                        <div class="product__image"></div>
+                        <div class="product__image">
+                            <div class="product__image__img">
+                                <img src="img/catalog/ark.jpg" alt="">
+                            </div>
+                            <div class="product__image_description">
+                                <p class="product__image_description-item">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Qui nam atque ratione nihil, alias culpa omnis odio ea. Libero
+                                    quaerat, quam aliquam asperiores eaque praesentium incidunt labore velit ipsa
+                                    sapiente.</p>
+                            </div>
+                        </div>
                         <div class="add-to__cart">
                             <div class="price__box">
                                 <h1 class="price">0₽</h1>

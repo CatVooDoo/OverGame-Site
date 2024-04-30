@@ -24,6 +24,11 @@ a {
     text-decoration: none;
 }
 
+input {
+    font-size: 16px;
+    /* увеличиваем размер текста внутри input */
+}
+
 /* work */
 
 .wrapper {
@@ -85,9 +90,14 @@ a {
 .user--icons {
     padding: 5px 0px 0px 0px;
     display: flex;
-    width: 120px;
+    width: 150px;
     justify-content: space-between;
 
+}
+
+.log__out {
+    width: 25px;
+    height: 25px;
 }
 
 .user__link:hover {
@@ -96,7 +106,7 @@ a {
 
 .button__item {
     height: 38px;
-    width: 90px;
+    width: 105px;
     border: none;
     border-radius: 8px;
     background-color: var(--main-color);
@@ -144,6 +154,29 @@ a {
     margin-bottom: 30px;
 }
 
+
+/* reg__form */
+.registration {
+    color: var(--white-color);
+
+}
+
+.reg__inputs {
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input__item {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none1;
+    border-radius: 6px;
+}
+
 /* slider */
 
 .slider {
@@ -187,8 +220,8 @@ a {
 }
 
 .catalog__item {
-    width: 262px;
-    height: 340px;
+    min-width: 262px;
+    height: auto;
     border-radius: 8px;
     background-color: var(--white-color);
     transition: 0.3s ease;
@@ -215,6 +248,11 @@ a {
     font-size: 20px;
     color: var(--title-color);
     margin-bottom: 17px;
+}
+
+.game-name span {
+    font-size: 15px;
+    color: red;
 }
 
 .card__subtitles {
@@ -257,10 +295,29 @@ a {
 
 .product__image {
     width: 700px;
-    height: 500px;
+    height: auto;
     background-color: var(--card-background-color);
     margin-right: 20px;
     border-radius: var(--card-radius);
+}
+
+.product__image__img {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.product__image__img img {
+    border-radius: 6px;
+}
+
+.product__image_description {
+    padding: 10px;
+}
+
+.product__image_description-item {
+    color: var(--white-color);
+    font-size: 20px;
 }
 
 .add-to__cart {
@@ -268,6 +325,10 @@ a {
     height: 200px;
     background-color: var(--card-background-color);
     border-radius: var(--card-radius);
+}
+
+.reg__form {
+    height: auto;
 }
 
 /* modal */
@@ -285,10 +346,15 @@ a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal__reg {
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .product__image {
@@ -306,11 +372,20 @@ a {
     padding: 30px 30px 30px 30px;
 }
 
+.reg__item {
+    justify-content: center;
+}
+
 .price {
     margin-right: 30px;
     color: var(--white-color);
     font-weight: bold;
     font-size: 24px;
+}
+
+.reg__text {
+    text-align: center;
+    margin-right: 0px;
 }
 
 .price:last-child {

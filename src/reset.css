@@ -162,3 +162,13 @@ input,
 select {
     vertical-align: middle
 }
+
+ul {
+    list-style: none;
+}
+
+input:focus {
+    outline: none;
+    height: 40px;
+    transform: scale(1.1);
+}

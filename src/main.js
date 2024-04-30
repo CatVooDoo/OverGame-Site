@@ -1,5 +1,8 @@
-let productCards = document.querySelectorAll(".catalog__item");
+const productCards = document.querySelectorAll(".catalog__item");
 const modalWindow = document.getElementById("modal");
+const modalRegistration = document.getElementById("modalreg");
+const modalButtons = document.querySelectorAll(".button__item");
+
 
 productCards.forEach(function (card) {
     card.addEventListener('mouseover', function () {
@@ -12,15 +15,20 @@ productCards.forEach(function (card) {
 
     card.addEventListener('click', function () {
         card.classList.add('catalog__item-click');
-        modalWindow.style.display = "flex"; // Изменить значение display для показа модального окна
+        modalWindow.style.display = "flex"; 
     });
 });
 
-// Добавить обработчик события для закрытия модального окна
+modalButtons.forEach(function (btns) {
+    btns.addEventListener('click', function () {
+        modalRegistration.style.display = "flex";
+    });
+});
+
 
 window.addEventListener('click', function (event) {
     if (event.target === modalWindow) {
-        modalWindow.style.display = "none"; // Скрыть модальное окно при клике вне его области
+        modalWindow.style.display = "none";
         productCards.forEach(function (card) {
             card.addEventListener('click', function () {
                 card.classList.remove('catalog__item-click');
@@ -28,5 +36,6 @@ window.addEventListener('click', function (event) {
         });
     }
 });
+
 
 // 🅺🅻🆅🅽🅼🆁🆃

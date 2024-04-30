@@ -1,0 +1,28 @@
+.filter {
+    margin-bottom: 30px;
+}
+
+.filter__title{
+    font-size: 25px;
+}
+
+#russifier {
+    width: 155px;
+}
+
+.filter__button {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: white;
+    font-size: 15px;
+}
+
+.filter__button:hover{
+    background-color: var(--main-color);
+    border: none;
+}
+
+.active {
+    background-color: var(--main-color);
+    border: none;
+}

@@ -1,1 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/catalog.css">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+    <title>OverGame</title>
+    <script src="src/main.js" defer></script>
+    <script src="src/filter.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header--inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1 class="logo__item">OverGame</h1>
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Русификаторы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Модицикации</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Наши продукты</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="sign__button">
+                    <button class="button__item sign-up"><span>Sign up</span></button>
+                    <button class="button__item sign-in"><span>Login</span></button>
+                </div> -->
+                <div class="user--icons">
+                    <div class="user--icon">
+                        <a class="user__link" href="#"><img class="user__link" src="img/header/cart.svg" alt="User"></a>
+                    </div>
+                    <div class="user--icon">
+                        <a class="user__link" href="#"><img class="user__link" src="img/header/favorite.svg"
+                                alt="Favorites"></a>
+                    </div>
+                    <div class="user--icon">
+                        <a class="user__link" href="#"><img class="user__link" src="img/header/user.svg"
+                                alt="Shopping cart"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="head__line"></div>
+    <main class="main">
+        <div class="wrapper">
+            <div class="main--inner">
+                </section>
+                <section class="catalog">
+                    <h1 class="catalog__title">Каталог товаров</h1>
+                    <div class="filter">
+                        <h1 class="catalog__title filter__title">Фильтр поиска</h1>
+                        <button class="button__item filter__button active" id="seeall"
+                            onclick="filterItems('all')">Все</button>
+                        <button class="button__item filter__button" id="russifier"
+                            onclick="filterItems('russifier')">Русификаторы</button>
+                        <button class="button__item filter__button" id="modify"
+                            onclick="filterItems('modify')">Моды</button>
+                    </div>
+                    <div class="catalog__list">
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/gta5.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">GTA V <span>Русификатор</span></h1>
+                                <div class="card__subtitles">   
+                                    <p class="card-price">300₽</p>
+                                    <div class="card-sale">
+                                        <h3>600₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/roblox.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Roblox <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">Free Download</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/nba.png" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">NBA 2K22 <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">900₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/dbd.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Dead by Daylight <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">500₽</p>
+                                    <div class="card-sale">
+                                        <h3>700₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/ark.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">ARK: Survival Evolved <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">600₽</p>
+                                    <div class="card-sale">
+                                        <h3>900₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item modify">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/rl.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Rocket League <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">Free Download</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item modify">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/fh5.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Forza Horizon 5 <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">1300₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/stc.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Cities: Skylines <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">700₽</p>
+                                    <div class="card-sale">
+                                        <h3>999₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/gta5.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">GTA V <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">300₽</p>
+                                    <div class="card-sale">
+                                        <h3>600₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/roblox.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Roblox <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">Free Download</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/nba.png" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">NBA 2K22 <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">900₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item modify">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/dbd.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Dead by Daylight <span>Модификация</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">500₽</p>
+                                    <div class="card-sale">
+                                        <h3>700₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/ark.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">ARK: Survival Evolved <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">600₽</p>
+                                    <div class="card-sale">
+                                        <h3>900₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item modify">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/rl.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Rocket League <span>Модицикация</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">Free Download</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item russifier">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/fh5.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Forza Horizon 5 <span>Русификатор</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">1300₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item modify">
+                            <div class="catalog__item_img">
+                                <img src="img/catalog/stc.jpg" alt="">
+                            </div>
+                            <div class="header__catalog-text">
+                                <h1 class="game-name">Cities: Skylines <span>Модицикация</span></h1>
+                                <div class="card__subtitles">
+                                    <p class="card-price">700₽</p>
+                                    <div class="card-sale">
+                                        <h3>999₽</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+                <section class="modal__window" id="modal">
+                    <div class="product__box">
+                        <div class="product__image"></div>
+                        <div class="add-to__cart">
+                            <div class="price__box">
+                                <h1 class="price">0₽</h1>
+                                <h1 class="price sale__price">100₽</h1>
+                            </div>
+                            <div class="button__add-to-cart">
+                                <button class="btn__add-to-cart"><span class="btn__add-to-cart--text">Добавить в
+                                        корзину</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div class="head__line footer--line"></div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer--inner">
+                <div class="logo">
+                    <a href="#">
+                        <h1 class="logo__item">Over<span>Game</span></h1>
+                    </a>
+                </div>
+                <div class="menu">
+                    <h1 class="footer__title">Menu</h1>
+                    <ul class="menu__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Order tracking</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Store location</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Return policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h1 class="footer__title">Resources</h1>
+                    <ul class="resources__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Help center</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Documentation</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h1 class="footer__title">Подписка на нас</h1>
+                    <div class="follow-us__list">
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/instagram.svg"
+                                alt="instagram" class="follow__item"></a>
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/youtube.svg"
+                                alt="instagram" class="follow__item"></a>
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/twitch.svg"
+                                alt="instagram" class="follow__item"></a>
+                        <a href="#" class="follow__link"><img class="follow__link" src="img/footer/twitter.svg"
+                                alt="instagram" class="follow__item"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
